@@ -37,14 +37,13 @@ namespace book_car_maintenance
             this.txtbCellPhone = new System.Windows.Forms.TextBox();
             this.txtbHomePhone = new System.Windows.Forms.TextBox();
             this.txtbProvince = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.txtbMakeModel = new System.Windows.Forms.TextBox();
+            this.rtbProblem = new System.Windows.Forms.RichTextBox();
+            this.btnBookAppointment = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnPreFill = new System.Windows.Forms.Button();
             this.lblErrorMessageOne = new System.Windows.Forms.Label();
             this.lblErrorMessageTwo = new System.Windows.Forms.Label();
             this.lblErrorMessageThree = new System.Windows.Forms.Label();
@@ -56,6 +55,11 @@ namespace book_car_maintenance
             this.lblHomePhone = new System.Windows.Forms.Label();
             this.lblCellPhone = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
+            this.lblMakeModel = new System.Windows.Forms.Label();
+            this.lblYear = new System.Windows.Forms.Label();
+            this.lblAppointment = new System.Windows.Forms.Label();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.lblProblem = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtbCustomerName
@@ -114,74 +118,68 @@ namespace book_car_maintenance
             this.txtbProvince.Size = new System.Drawing.Size(195, 23);
             this.txtbProvince.TabIndex = 4;
             // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(567, 115);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(195, 23);
-            this.textBox9.TabIndex = 10;
-            // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(567, 67);
+            this.textBox10.Location = new System.Drawing.Point(562, 62);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(195, 23);
+            this.textBox10.Size = new System.Drawing.Size(200, 23);
             this.textBox10.TabIndex = 9;
             // 
-            // textBox11
+            // txtbMakeModel
             // 
-            this.textBox11.Location = new System.Drawing.Point(567, 22);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(195, 23);
-            this.textBox11.TabIndex = 8;
+            this.txtbMakeModel.Location = new System.Drawing.Point(562, 22);
+            this.txtbMakeModel.Name = "txtbMakeModel";
+            this.txtbMakeModel.Size = new System.Drawing.Size(200, 23);
+            this.txtbMakeModel.TabIndex = 8;
             // 
-            // richTextBox1
+            // rtbProblem
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(401, 165);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(361, 164);
-            this.richTextBox1.TabIndex = 11;
-            this.richTextBox1.Text = "";
+            this.rtbProblem.Location = new System.Drawing.Point(401, 184);
+            this.rtbProblem.Name = "rtbProblem";
+            this.rtbProblem.Size = new System.Drawing.Size(361, 164);
+            this.rtbProblem.TabIndex = 11;
+            this.rtbProblem.Text = "";
             // 
-            // button1
+            // btnBookAppointment
             // 
-            this.button1.Location = new System.Drawing.Point(404, 354);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Book Appointment";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnBookAppointment.Location = new System.Drawing.Point(404, 354);
+            this.btnBookAppointment.Name = "btnBookAppointment";
+            this.btnBookAppointment.Size = new System.Drawing.Size(132, 23);
+            this.btnBookAppointment.TabIndex = 12;
+            this.btnBookAppointment.Text = "Book Appointment";
+            this.btnBookAppointment.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnReset
             // 
-            this.button2.Location = new System.Drawing.Point(542, 356);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(70, 21);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Reset";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnReset.Location = new System.Drawing.Point(542, 356);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(70, 21);
+            this.btnReset.TabIndex = 13;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnClose
             // 
-            this.button3.Location = new System.Drawing.Point(618, 356);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(70, 21);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Close";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnClose.Location = new System.Drawing.Point(618, 356);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(70, 21);
+            this.btnClose.TabIndex = 14;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnPreFill
             // 
-            this.button4.Location = new System.Drawing.Point(694, 358);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(68, 21);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "Pre-fill";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnPreFill.Location = new System.Drawing.Point(694, 358);
+            this.btnPreFill.Name = "btnPreFill";
+            this.btnPreFill.Size = new System.Drawing.Size(68, 21);
+            this.btnPreFill.TabIndex = 15;
+            this.btnPreFill.Text = "Pre-fill";
+            this.btnPreFill.UseVisualStyleBackColor = true;
             // 
             // lblErrorMessageOne
             // 
             this.lblErrorMessageOne.AutoSize = true;
+            this.lblErrorMessageOne.ForeColor = System.Drawing.Color.Crimson;
             this.lblErrorMessageOne.Location = new System.Drawing.Point(36, 397);
             this.lblErrorMessageOne.Name = "lblErrorMessageOne";
             this.lblErrorMessageOne.Size = new System.Drawing.Size(0, 15);
@@ -190,6 +188,7 @@ namespace book_car_maintenance
             // lblErrorMessageTwo
             // 
             this.lblErrorMessageTwo.AutoSize = true;
+            this.lblErrorMessageTwo.ForeColor = System.Drawing.Color.Crimson;
             this.lblErrorMessageTwo.Location = new System.Drawing.Point(36, 426);
             this.lblErrorMessageTwo.Name = "lblErrorMessageTwo";
             this.lblErrorMessageTwo.Size = new System.Drawing.Size(0, 15);
@@ -198,6 +197,7 @@ namespace book_car_maintenance
             // lblErrorMessageThree
             // 
             this.lblErrorMessageThree.AutoSize = true;
+            this.lblErrorMessageThree.ForeColor = System.Drawing.Color.Crimson;
             this.lblErrorMessageThree.Location = new System.Drawing.Point(36, 454);
             this.lblErrorMessageThree.Name = "lblErrorMessageThree";
             this.lblErrorMessageThree.Size = new System.Drawing.Size(0, 15);
@@ -275,11 +275,59 @@ namespace book_car_maintenance
             this.lblEmail.TabIndex = 26;
             this.lblEmail.Text = "Email:";
             // 
+            // lblMakeModel
+            // 
+            this.lblMakeModel.AutoSize = true;
+            this.lblMakeModel.Location = new System.Drawing.Point(457, 25);
+            this.lblMakeModel.Name = "lblMakeModel";
+            this.lblMakeModel.Size = new System.Drawing.Size(79, 15);
+            this.lblMakeModel.TabIndex = 27;
+            this.lblMakeModel.Text = "Make & Model:";
+            // 
+            // lblYear
+            // 
+            this.lblYear.AutoSize = true;
+            this.lblYear.Location = new System.Drawing.Point(504, 65);
+            this.lblYear.Name = "lblYear";
+            this.lblYear.Size = new System.Drawing.Size(32, 15);
+            this.lblYear.TabIndex = 28;
+            this.lblYear.Text = "Year:";
+            // 
+            // lblAppointment
+            // 
+            this.lblAppointment.AutoSize = true;
+            this.lblAppointment.Location = new System.Drawing.Point(429, 110);
+            this.lblAppointment.Name = "lblAppointment";
+            this.lblAppointment.Size = new System.Drawing.Size(107, 15);
+            this.lblAppointment.TabIndex = 29;
+            this.lblAppointment.Text = "Appointment date:";
+            // 
+            // dateTimePicker
+            // 
+            this.dateTimePicker.Location = new System.Drawing.Point(562, 104);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker.TabIndex = 30;
+            // 
+            // lblProblem
+            // 
+            this.lblProblem.AutoSize = true;
+            this.lblProblem.Location = new System.Drawing.Point(481, 148);
+            this.lblProblem.Name = "lblProblem";
+            this.lblProblem.Size = new System.Drawing.Size(55, 15);
+            this.lblProblem.TabIndex = 31;
+            this.lblProblem.Text = "Problem:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 496);
+            this.Controls.Add(this.lblProblem);
+            this.Controls.Add(this.dateTimePicker);
+            this.Controls.Add(this.lblAppointment);
+            this.Controls.Add(this.lblYear);
+            this.Controls.Add(this.lblMakeModel);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblCellPhone);
             this.Controls.Add(this.lblHomePhone);
@@ -291,14 +339,13 @@ namespace book_car_maintenance
             this.Controls.Add(this.lblErrorMessageThree);
             this.Controls.Add(this.lblErrorMessageTwo);
             this.Controls.Add(this.lblErrorMessageOne);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.btnPreFill);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.btnBookAppointment);
+            this.Controls.Add(this.rtbProblem);
             this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.txtbMakeModel);
             this.Controls.Add(this.txtbEmail);
             this.Controls.Add(this.txtbCellPhone);
             this.Controls.Add(this.txtbHomePhone);
@@ -324,14 +371,13 @@ namespace book_car_maintenance
         private System.Windows.Forms.TextBox txtbCellPhone;
         private System.Windows.Forms.TextBox txtbHomePhone;
         private System.Windows.Forms.TextBox txtbProvince;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox txtbMakeModel;
+        private System.Windows.Forms.RichTextBox rtbProblem;
+        private System.Windows.Forms.Button btnBookAppointment;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnPreFill;
         private System.Windows.Forms.Label lblErrorMessageOne;
         private System.Windows.Forms.Label lblErrorMessageTwo;
         private System.Windows.Forms.Label lblErrorMessageThree;
@@ -343,6 +389,11 @@ namespace book_car_maintenance
         private System.Windows.Forms.Label lblHomePhone;
         private System.Windows.Forms.Label lblCellPhone;
         private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblMakeModel;
+        private System.Windows.Forms.Label lblYear;
+        private System.Windows.Forms.Label lblAppointment;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
+        private System.Windows.Forms.Label lblProblem;
     }
 }
 
