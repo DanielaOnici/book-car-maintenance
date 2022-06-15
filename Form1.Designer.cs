@@ -309,6 +309,7 @@ namespace book_car_maintenance
             // dateTimePicker
             // 
             this.dateTimePicker.Location = new System.Drawing.Point(562, 104);
+            this.dateTimePicker.MinDate = new System.DateTime(2022, 6, 15, 0, 0, 0, 0);
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(200, 23);
             this.dateTimePicker.TabIndex = 30;
