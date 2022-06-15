@@ -37,7 +37,7 @@ namespace book_car_maintenance
             this.txtbCellPhone = new System.Windows.Forms.TextBox();
             this.txtbHomePhone = new System.Windows.Forms.TextBox();
             this.txtbProvince = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtbYear = new System.Windows.Forms.TextBox();
             this.txtbMakeModel = new System.Windows.Forms.TextBox();
             this.rtbProblem = new System.Windows.Forms.RichTextBox();
             this.btnBookAppointment = new System.Windows.Forms.Button();
@@ -118,12 +118,12 @@ namespace book_car_maintenance
             this.txtbProvince.Size = new System.Drawing.Size(195, 23);
             this.txtbProvince.TabIndex = 4;
             // 
-            // textBox10
+            // txtbYear
             // 
-            this.textBox10.Location = new System.Drawing.Point(562, 62);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(200, 23);
-            this.textBox10.TabIndex = 9;
+            this.txtbYear.Location = new System.Drawing.Point(562, 62);
+            this.txtbYear.Name = "txtbYear";
+            this.txtbYear.Size = new System.Drawing.Size(200, 23);
+            this.txtbYear.TabIndex = 9;
             // 
             // txtbMakeModel
             // 
@@ -148,6 +148,7 @@ namespace book_car_maintenance
             this.btnBookAppointment.TabIndex = 12;
             this.btnBookAppointment.Text = "Book Appointment";
             this.btnBookAppointment.UseVisualStyleBackColor = true;
+            this.btnBookAppointment.Click += new System.EventHandler(this.btnBookAppointment_Click);
             // 
             // btnReset
             // 
@@ -157,6 +158,7 @@ namespace book_car_maintenance
             this.btnReset.TabIndex = 13;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnClose
             // 
@@ -166,6 +168,7 @@ namespace book_car_maintenance
             this.btnClose.TabIndex = 14;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnPreFill
             // 
@@ -175,6 +178,7 @@ namespace book_car_maintenance
             this.btnPreFill.TabIndex = 15;
             this.btnPreFill.Text = "Pre-fill";
             this.btnPreFill.UseVisualStyleBackColor = true;
+            this.btnPreFill.Click += new System.EventHandler(this.btnPreFill_Click);
             // 
             // lblErrorMessageOne
             // 
@@ -344,7 +348,7 @@ namespace book_car_maintenance
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnBookAppointment);
             this.Controls.Add(this.rtbProblem);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.txtbYear);
             this.Controls.Add(this.txtbMakeModel);
             this.Controls.Add(this.txtbEmail);
             this.Controls.Add(this.txtbCellPhone);
@@ -371,7 +375,7 @@ namespace book_car_maintenance
         private System.Windows.Forms.TextBox txtbCellPhone;
         private System.Windows.Forms.TextBox txtbHomePhone;
         private System.Windows.Forms.TextBox txtbProvince;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtbYear;
         private System.Windows.Forms.TextBox txtbMakeModel;
         private System.Windows.Forms.RichTextBox rtbProblem;
         private System.Windows.Forms.Button btnBookAppointment;
